@@ -197,7 +197,16 @@ In your spec_helper.rb:
 require 'action_subscriber/rspec'
 
 RSpec.configure do |config|
-  config.include ::ActionSubscriber::Rspec
+  config.include ::ActionSubscriber::RSpec
+end
+```
+Or if you are using the rspec-rails gem
+
+```
+require 'action_subscriber/rspec_rails'
+
+RSpec.configure do |config|
+  config.include ::ActionSubscriber::RSpec
 end
 ```
 
